@@ -1,0 +1,10 @@
+import controller.ProcessManager;
+import view.ConsoleView;
+
+public class Main {
+    public static void main(String[] args) {
+        ProcessManager manager = new ProcessManager();
+        ConsoleView view = new ConsoleView(manager);
+        view.showMenu();
+    }
+}
